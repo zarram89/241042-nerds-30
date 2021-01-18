@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Рамиль Зарипов](https://up.htmlacademy.ru/htmlcss/30/user/241042).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
