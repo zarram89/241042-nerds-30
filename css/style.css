@@ -1,0 +1,349 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #283136;
+  --basic-medium-dark: #444444;
+  --basic-dark: #4d4d4d;
+  --basic-gray: #eeeeee;
+  --basic-light-gray: #d7dcde;
+  --basic-neutral: #666666;
+  --basic-extra-light: #f8f5f2;
+  --basic-white: #ffffff;
+
+  --basic-red: #fb565a;
+  --basic-medium-red: #e74246;
+  --basic-extra-red: #d7373b;
+
+  --basic-green: #00ca74;
+  --basic-medium-green: #00bc6c;
+  --basic-extra-green: #00aa62;
+
+  --basic-orange: #efc84a;
+  --basic-medium-orange: #eab534;
+  --basic-extra-orange: #e5a722;
+}
+
+/* Global */
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Georgia", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-extra-dark);
+  background-color: var(--basic-white);
+}
+
+/* Main-navigation */
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: var(--basic-red);
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: var(--basic-red);
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-right: 54px;
+  padding-bottom: 17px;
+  padding-left: 54px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--basic-medium-red);
+}
+
+.button:active {
+  color: var(--basic-white);
+  background-color: var(--basic-extra-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.button a:active {
+  opacity: 0.3;
+}
+
+/* Promos */
+
+.promos {
+  background-color: var(--basic-gray);
+}
+
+.promos-list {
+  list-style: none;
+}
+
+.promo-bold-text {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.services-list h3 {
+  color: var(--basic-black);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.services-button {
+  padding-top: 17;
+  padding-right: 40;
+  padding-bottom: 15;
+  padding-left: 39;
+}
+
+.web-button {
+  background-color: var(--basic-red);
+}
+
+.web-button:hover {
+  background-color: var(--basic-medium-red);
+}
+
+.web-button:active {
+  background-color: var(--basic-extra-red);
+}
+
+.app-button {
+  background-color: var(--basic-green);
+}
+
+.app-button:hover {
+  background-color: var(--basic-medium-green);
+}
+
+.app-button:active {
+  background-color: var(--basic-extra-green);
+}
+
+.presentation-button {
+  background-color: var(--basic-orange);
+}
+
+.presentation-button:hover {
+  background-color: var(--basic-medium-orange);
+}
+
+.presentation-button:active {
+  background-color: var(--basic-extra-orange);
+}
+
+/* About */
+
+.about-bold-text {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.about-uppercase-description {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--basic-extra-dark);
+}
+
+.about-uppercase-visual {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.description-list {
+  list-style: none;
+}
+
+.table-info th {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.table-info td {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* Partners */
+
+.partners-list {
+  list-style: none;
+}
+
+.partners-item img {
+  opacity: 0.2;
+}
+
+.partners-item img:hover {
+  opacity: 1;
+}
+
+.partners-item img:active {
+  opacity: 0.1;
+}
+
+/* Contacts */
+
+.contacts-bold-text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contacts-address,
+.contacts-phone {
+  color: var(--basic-neutral);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts-button {
+  padding-top: 16px;
+  padding-right: 44px;
+  padding-bottom: 16px;
+  padding-left: 44px;
+}
+
+/* Footer */
+
+.social-list {
+  list-style: none;
+}
+
+.social-button {
+  color: var(--basic-white);
+  background: linear-gradient(0deg, #e1e1e1, #e1e1e1), #ffffff;
+}
+
+.social-button:hover {
+  background: linear-gradient(0deg, #e74246, #e74246), #ffffff;
+}
+
+.social-button:active {
+  background: linear-gradient(0deg, #d7373b, #d7373b), #ffffff;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.footer-bold-text {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.footer-discount-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-medium-dark);
+}
+
+/* Modal */
+
+.modal-login {
+  color: var(--basic-black);
+}
+
+.modal-description {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 53px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="textarea"] {
+  font: inherit;
+  color: var(--basic-medium-dark);
+  border: 2px solid var(--basic-light-gray);
+  border-radius: 3px;
+}
+
+.login-form input:focus {
+  color: var(--basic-black);
+  border: 2px solid var(--basic-black);
+}
