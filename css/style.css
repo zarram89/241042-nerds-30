@@ -277,6 +277,14 @@ img {
   padding-left: 44px;
 }
 
+.contacts-map-container {
+  max-width: 1200px;
+}
+
+.contacts-map-container img {
+  width: 100%;
+}
+
 /* Footer */
 
 .social-list {
