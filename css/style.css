@@ -81,6 +81,22 @@ img {
   height: 100%;
 }
 
+/* Grid for pages */
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+}
+
+.catalog-wrapper {
+  display: grid;
+}
+
+.catalog-sort {
+  grid-column: 1 / -1;
+}
+
 /* Main-navigation */
 
 .main-header {
@@ -148,8 +164,11 @@ img {
 
 /* Page title */
 
-.page-title-container {
+.page-catalog .page-title-container {
   background-color: var(--basic-gray);
+  padding: 108px auto;
+  margin: 0 0;
+  grid-column: 1 / -1;
 }
 
 .page-title-container h1 {
